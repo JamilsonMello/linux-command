@@ -1,0 +1,7 @@
+command: top
+
+list process => top
+
+you can install the htop to see more details => sudo apt-get install htop
+
+list process => htop

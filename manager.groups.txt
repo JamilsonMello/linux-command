@@ -1,0 +1,16 @@
+command: getent group
+
+list groups => getent group
+
+add group => sudo groupadd development
+
+remove group => sudo groupdel development
+
+add group => sudo groupadd development
+add group => sudo groupadd jamilson
+
+add user to group => sudo usermod -a -G development jamilson
+
+see groups => groups jamilson
+
+remove user from group => sudo gpasswd -d user developmentS

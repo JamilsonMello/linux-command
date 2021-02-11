@@ -1,0 +1,5 @@
+command: adduser jamilson
+
+create new user => sudo adduser jamilson
+
+list users => getent passwd 

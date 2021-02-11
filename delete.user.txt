@@ -1,0 +1,3 @@
+command: userdel --remove jamilson
+
+remove user => sudo userdel --remove jamilson

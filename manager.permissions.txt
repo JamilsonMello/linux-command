@@ -1,0 +1,39 @@
+read: R
+write: W
+execute: X
+
+---"numeric way"---
+
+alter permissions with chmod: chmod xxx file or directory.
+
+0: no permission: ---
+1: execute: --X
+2: write: -W-
+3: write and execute: -WX
+4: read: R--
+5: read and execute: R-X
+6: read and write: RW-
+7: read, write and execute: RWX
+
+create a new file => touch arquivo.txt
+
+change permissions with chmod => chmod 100 arquivo.txt
+
+---"symbolic way"---
+
+alter permissions with chmod: chmod args file or directory.
+
++: add permissions from a file or directory.
+-: remove permissions from a file or directory.
+=: determine permissions, substitute the past permission.
+u: owner or user.
+g: group.
+o: others.
+a: all.
+
+create a new file => touch arquivo.txt
+
+change permissions with chmod => chmod o=x arquivo.txt
+change permissions with chmod => chmod a=rwx arquivo.txt
+change permissions with chmod => chmod g=x arquivo.txt
+change permissions with chmod => chmod u=rx arquivo.txt

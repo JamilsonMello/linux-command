@@ -1,0 +1,3 @@
+command: sudo su
+
+using superuser => sudo su
